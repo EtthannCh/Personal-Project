@@ -5,8 +5,9 @@ body {
     text-align: center;
     /* font-family: cursive, Arial, Helvetica, sans-serif; */
     font-family: 'Josefin Sans', sans-serif;
-    width: 100%;
+    max-width: 100vw;
     font-size: 25px;
+    height: -webkit-fill-available;
 }
 
 h1 {
@@ -35,7 +36,7 @@ hr {
     width: 5%;
 }
 
-p{
+p {
     line-height: 2;
 }
 
@@ -53,6 +54,8 @@ p{
 .mountain {
     position: relative;
     top: 10px;
+    max-width: 100%;
+    margin-top: 20px;
 }
 
 div {
@@ -109,7 +112,7 @@ button:hover {
 .top-cloud {
     position: relative;
     /* push from left , can be stack with other things on screen, relative to the parent element*/
-    left: 200px;
+    left: 80px;
     padding: 20px;
     top: 20px;
 }
