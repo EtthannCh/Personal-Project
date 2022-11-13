@@ -1,0 +1,157 @@
+body {
+    background-color: #CFF5E7;
+    color: #0D4C92;
+    margin: 0 auto;
+    text-align: center;
+    /* font-family: cursive, Arial, Helvetica, sans-serif; */
+    font-family: 'Josefin Sans', sans-serif;
+    width: 100%;
+    font-size: 25px;
+}
+
+h1 {
+    font-size: 5.625rem;
+    /*em = inherit the font size from parent example : body fontsize 16px and h1 15px so it adds up to 31 px*/
+    /*rem in the other hand, ignore the parent so if body fontsize 16px and h1 15px, it still remains 15px*/
+    font-family: 'Source Code Pro', monospace;
+    width: 100%;
+    line-height: 2;
+    /*prefer single unit without value like em, px*/
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+
+h3 {
+    color: #11999E;
+}
+
+hr {
+    border: none;
+    border-top-style: dotted;
+    border-width: 5px;
+    width: 5%;
+}
+
+p{
+    line-height: 2;
+}
+
+.pro {
+    text-decoration: underline;
+}
+
+.img-1 {
+    margin-top: 50px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.mountain {
+    position: relative;
+    top: 10px;
+}
+
+div {
+    background-color: #59C1BD;
+    color: 8EC3B0;
+    width: 100%;
+}
+
+
+.top-container {
+    /* display: inline-block; */
+    /* border: solid 10px black; */
+    /* position: relative; */
+}
+
+.second-container {
+    /* display: inline-block; */
+    background-color: red;
+    /* border: solid 10px black; */
+    /* position: relative; */
+    /* margin-left: 220px; */
+}
+
+.bottom-container {
+    display: inline-block;
+    background-color: #11999E;
+    padding-top: 20px;
+}
+
+.footer-link {
+    padding: 10px;
+
+}
+
+a {
+    text-decoration: none;
+    color: #CFF5E7;
+}
+
+a:hover {
+    color: blue;
+}
+
+
+button:hover {
+    cursor: pointer;
+    color: blue;
+}
+
+.bot-cloud {
+    position: absolute;
+}
+
+.top-cloud {
+    position: relative;
+    /* push from left , can be stack with other things on screen, relative to the parent element*/
+    left: 200px;
+    padding: 20px;
+    top: 20px;
+}
+
+.img-comp {
+    width: 25%;
+    border-radius: 50%;
+    float: left;
+    margin-right: 30px;
+}
+
+.img-chili {
+    width: 25%;
+    float: right;
+    margin-left: 30px;
+}
+
+.skill-row {
+    width: 50%;
+    margin: 100px auto;
+    text-align: left;
+    line-height: 2;
+}
+
+.contact-me {
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+.btn {
+    font-size: 30px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #CFF5E7;
+}
+
+/* .code-skill-desc{
+    clear: left;
+}
+
+.chili-challenge-desc{
+    text-align: right;
+    clear: right;
+} */
