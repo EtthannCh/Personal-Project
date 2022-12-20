@@ -1,0 +1,152 @@
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.box::before {
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    top: -50%;
+    left: -50%;
+    transform-origin: bottom right;
+    background: linear-gradient(0deg, transparent, #39FF14, #39FF14);
+    animation: animate 6s linear infinite;
+    overflow: hidden;
+}
+
+.box::after {
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    top: -50%;
+    left: -50%;
+    transform-origin: bottom right;
+    background: linear-gradient(0deg, transparent, #39FF14, #39FF14);
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+    overflow: hidden;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.form {
+    position: absolute;
+    background: #232528;
+    inset: 3px;
+    z-index: 10;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.form h2 {
+    text-align: center;
+    color: #39FF14;
+}
+
+.inputbox {
+    position: relative;
+    margin-top: 30px;
+    width: 300px;
+}
+
+.inputbox input {
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    transition: 0.5s;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: black;
+    z-index: 10;
+}
+
+.inputbox span {
+    position: absolute;
+    top: 17px;
+    left: 5px;
+    transition: 0.5s;
+    color: #39FF14;
+}
+
+.inputbox input:valid~span,
+.inputbox input:focus~span {
+    color: cyan;
+    transform: translateY(-40px);
+    letter-spacing: 0.1em;
+}
+
+.inputbox i {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    background: #39FF14;
+    z-index: 9;
+    pointer-events: none;
+    transition: 0.5s;
+    border-radius: 10px;
+    z-index: 9;
+}
+
+.inputbox input:valid~i,
+.inputbox input:focus~i {
+    height: 44px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.links a {
+    text-decoration: none;
+    color: #39FF14;
+}
+
+.links a:hover:nth-child(1) {
+    text-decoration: none;
+    color: cyan;
+}
+
+.links a:nth-child(1) {
+    margin: 20px 0;
+}
+
+.links a:nth-child(2) {
+    margin: 20px 20px;
+}
+
+button[type="submit"]{
+    padding: 15px 15px;
+    border-radius: 10px;
+    background: #39FF14;
+    color: black;
+    cursor: pointer;
+}
