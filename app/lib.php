@@ -16,8 +16,8 @@ function login($username, $password){
     $my_pass = "bbca";
     if($username == $my_user && $password==$my_pass){
         $_SESSION["username"] = $username;
-        return true;
         header("location: index.php");
+        return true;
     }
     else{
         header("location: index.php");
